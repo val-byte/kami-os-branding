@@ -30,4 +30,3 @@ mv logos/* %{buildroot}%{_datadir}/pixmaps
 
 %files
 %attr(0755,root,root) %{_datadir}/pixmaps/fedora*
-%attr(0755,root,root) %{_datadir}/pixmaps/system-*
