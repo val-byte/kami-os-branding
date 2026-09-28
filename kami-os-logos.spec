@@ -32,3 +32,4 @@ mv plymouth/* %{buildroot}%{_datadir}/plymouth/themes/spinner
 
 %files
 %attr(0755,root,root) %{_datadir}/pixmaps/fedora*
+%attr(0755,root,root) %{_datadir}/plymouth/themes/spinner/watermark.png
