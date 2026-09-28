@@ -25,8 +25,9 @@ Logos for Kami-Os
 
 %install
 mkdir -p -m0755 %{buildroot}%{_datadir}/pixmaps
+mkdir -p -m0755 %{buildroot}%{_datadir}/plymouth/themes/spinner
 
 mv logos/* %{buildroot}%{_datadir}/pixmaps
-
+mv plymouth/* %{buildroot}%{_datadir}/plymouth/themes/spinner
 %files
 %attr(0755,root,root) %{_datadir}/pixmaps/fedora*
