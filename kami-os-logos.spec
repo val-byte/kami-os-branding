@@ -2,7 +2,7 @@
 %global vendor val-byte
 
 Name:           kami-os-logos
-Version:        0.1
+Version:        0.2
 Release:        1%{?dist}
 Summary:        kamios logos
 
