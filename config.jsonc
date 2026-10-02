@@ -1,0 +1,33 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "source": "~/Documents/ascii-small.txt",
+    "type": "file",
+    "color": {
+      "1": "white",
+      "2": "yellow",
+      "3": "green",
+      "4": "38;2;120;169;255",
+      "5": "magenta",
+      "6": "red",
+      "7": "cyan",
+      "8": "black"
+    }
+  },
+  "modules": [
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "de",
+    "terminal",
+    "terminalfont",
+    "cpu",
+    "gpu",
+    "memory",
+    "disk",
+    "colors"
+  ]
+}
