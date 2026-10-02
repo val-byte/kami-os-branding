@@ -2,7 +2,7 @@
 %global vendor val-byte
 
 Name:           kami-os-logos
-Version:        0.2
+Version:        0.3
 Release:        1%{?dist}
 Summary:        kamios logos
 
@@ -26,10 +26,13 @@ Logos for Kami-Os
 %install
 mkdir -p -m0755 %{buildroot}%{_datadir}/pixmaps
 mkdir -p -m0755 %{buildroot}%{_datadir}/plymouth/themes/spinner
+mkdir -p -m0755 $HOME/.config/fastfetch
 
+mv fastfetch/* $HOME/.config/fastfetch
 mv logos/* %{buildroot}%{_datadir}/pixmaps
 mv plymouth/* %{buildroot}%{_datadir}/plymouth/themes/spinner
 
 %files
 %attr(0755,root,root) %{_datadir}/pixmaps/fedora*
 %attr(0755,root,root) %{_datadir}/plymouth/themes/spinner/watermark.png
+%attr(0755,root,root) %{_datadir}/fastfetch/*
