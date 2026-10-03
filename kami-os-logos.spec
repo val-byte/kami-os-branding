@@ -26,13 +26,14 @@ Logos for Kami-Os
 %install
 mkdir -p -m0755 %{buildroot}%{_datadir}/pixmaps
 mkdir -p -m0755 %{buildroot}%{_datadir}/plymouth/themes/spinner
-mkdir -p -m0755 $HOME/.config/fastfetch
+mkdir -p -m0755 %{buildroot}%{_sysconfdir}/skel/.config/fastfetch
 
-mv fastfetch/* $HOME/.config/fastfetch
+mv fastfetch/* %{buildroot}%{_sysconfdir}/skel/.config/fastfetch/
 mv logos/* %{buildroot}%{_datadir}/pixmaps
 mv plymouth/* %{buildroot}%{_datadir}/plymouth/themes/spinner
 
 %files
 %attr(0755,root,root) %{_datadir}/pixmaps/fedora*
 %attr(0755,root,root) %{_datadir}/plymouth/themes/spinner/watermark.png
-%attr(0755,root,root) %{_datadir}/fastfetch/*
+%dir %attr(0755,root,root) %{_sysconfdir}/skel/.config/fastfetch
+%{_sysconfdir}/skel/.config/fastfetch/*
